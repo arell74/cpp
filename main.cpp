@@ -1,6 +1,15 @@
 #include <iostream>
 
 using namespace std;
+
+int penjumlahan(int a, int b) {
+        return a + b;
+    }
+
+void log(int result) {
+    cout << "Hasil akhirnya adalah: " << result << endl;
+}
+
 int main() {
     // cout << "hello world" << endl;
     // int umur = 18;
@@ -17,10 +26,19 @@ int main() {
     // cout << "Hasil dari x + y adalah " << z;
 
     // tugas 2
-    int a = 5;
-    int b = 15;
-    int c = a + b;
-    cout << "Penjumlahan antara " << a << " dengan nilai " << b << " adalah " << c;
+    // int a = 5;
+    // int b = 15;
+    // int c = a + b;
+    // cout << "Penjumlahan antara " << a << " dengan nilai " << b << " adalah " << c;
+
+    
+
+    //function
+    int hasil1 = penjumlahan(49, 51);
+    int hasil2 = penjumlahan(86, 87);
+
+    log(hasil1);
+    log(hasil2);
 
     return 0;
 }
