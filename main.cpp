@@ -6,6 +6,18 @@ int penjumlahan(int a, int b) {
         return a + b;
     }
 
+int pengurangan(int a, int b) {
+    return a - b;
+}
+
+int perkalian(int a, int b) {
+    return a * b;
+}
+
+int pembagian(int a, int b) {
+    return a / b;
+}
+
 void log(int result) {
     cout << "Hasil akhirnya adalah: " << result << endl;
 }
@@ -34,11 +46,15 @@ int main() {
     
 
     //function
-    int hasil1 = penjumlahan(49, 51);
-    int hasil2 = penjumlahan(86, 87);
+    int tambah = penjumlahan(49, 51);
+    int kurang = pengurangan(86, 87);
+    int kali = perkalian(74, 80);
+    int bagi = pembagian(100, 6);
 
-    log(hasil1);
-    log(hasil2);
+    log(tambah);
+    log(kurang);
+    log(kali);
+    log(bagi);
 
     return 0;
 }
