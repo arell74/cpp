@@ -1,4 +1,5 @@
 #include <iostream>
+#include <chrono>
 
 using namespace std;
 
@@ -19,7 +20,7 @@ int pembagian(int a, int b) {
 }
 
 void log(int result) {
-    cout << "Hasil akhirnya adalah: " << result << endl;
+    cout << "Tahun lahir anda: " << result << endl;
 }
 
 int main() {
@@ -57,15 +58,32 @@ int main() {
     // log(bagi);
 
     // perkondisian
-    int rapot = 90;
+    // int rapot = 90;
     
-    if(rapot >= 90) {
-        cout << "Anda jenius coyy";
-    } else if(rapot > 70) {
-        cout << "Tingkatkan lagi belajarnya lee";
-    } else {
-        cout << "Duh main game bae sih..";
-    }
+    // if(rapot >= 90) {
+    //     cout << "Anda jenius coyy";
+    // } else if(rapot > 70) {
+    //     cout << "Tingkatkan lagi belajarnya lee";
+    // } else {
+    //     cout << "Duh main game bae sih..";
+    // }
+
+    using namespace chrono;
+
+    int tahun_lahir;
+    cout << "Masukan tahun lahir: ";
+    cin >> tahun_lahir;
+
+    time_t t = time(nullptr);
+    tm* now = localtime(&t);
+    int tahun_sekarang = now->tm_year + 1900;
+
+    int usia = tahun_sekarang - tahun_lahir;
+
+    cout << "Tahun sekarang: " << tahun_sekarang << endl;
+    cout << "Usia kamu: " << usia << " tahun" << endl;
+
+
 
     return 0;
 }
