@@ -46,15 +46,26 @@ int main() {
     
 
     //function
-    int tambah = penjumlahan(49, 51);
-    int kurang = pengurangan(86, 87);
-    int kali = perkalian(74, 80);
-    int bagi = pembagian(100, 6);
+    // int tambah = penjumlahan(49, 51);
+    // int kurang = pengurangan(86, 87);
+    // int kali = perkalian(74, 80);
+    // int bagi = pembagian(100, 6);
 
-    log(tambah);
-    log(kurang);
-    log(kali);
-    log(bagi);
+    // log(tambah);
+    // log(kurang);
+    // log(kali);
+    // log(bagi);
+
+    // perkondisian
+    int rapot = 90;
+    
+    if(rapot >= 90) {
+        cout << "Anda jenius coyy";
+    } else if(rapot > 70) {
+        cout << "Tingkatkan lagi belajarnya lee";
+    } else {
+        cout << "Duh main game bae sih..";
+    }
 
     return 0;
 }
