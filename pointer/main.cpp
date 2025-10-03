@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void tukar(int *a, int *b)
+void swipe(int *a, int *b)
 {
     int temp;
     temp = *a;
@@ -26,7 +26,7 @@ int main()
     int a = 10;
     int b = 20;
     
-    tukar(&a, &b);
+    swipe(&a, &b);
 
     cout << "Mem adress of a : " << &a << endl;
     cout << "Nilai a Adalah : " << a << endl;
